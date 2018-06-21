@@ -9,10 +9,7 @@ namespace Number
             string result = "";
             if (number <= 3)
             {
-                for (int i = 0; i < number; i++)
-                {
-                    result += "I";
-                }
+                result = RepeatLiteral(number);
             }
             else if (number == 4)
             {
@@ -24,11 +21,7 @@ namespace Number
             }
             else if (number >= 6 && number <= 8)
             {
-                result = "V";
-                for (int i = 5; i < number; i++)
-                {
-                    result += "I";
-                }
+                result = "V" + RepeatLiteral(number - 5);
             }
             else if (number == 9)
             {
@@ -41,6 +34,16 @@ namespace Number
             if (String.IsNullOrEmpty(result))
             {
                 throw new ArgumentException("Value can't be converted");
+            }
+            return result;
+        }
+
+        private static string RepeatLiteral(int times)
+        {
+            string result = "";
+            for (int i = 0; i < times; i++)
+            {
+                result += "I";
             }
             return result;
         }
