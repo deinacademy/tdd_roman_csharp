@@ -7,9 +7,11 @@ namespace Number
         public string ConvertToRoman(int number)
         {
             string result = "";
+            int hundreds = number / 100 % 10;
             int tens = number / 10 % 10;
             int ones = number / 1 % 10;
 
+            result += PlaceValues(hundreds, new string[] { "C", "D", "M" });
             result += PlaceValues(tens, new string[] { "X", "L", "C" });
             result += PlaceValues(ones, new string[] { "I", "V", "X" });
 
