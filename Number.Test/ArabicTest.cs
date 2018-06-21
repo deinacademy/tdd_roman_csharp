@@ -20,5 +20,15 @@ namespace Number.Test
             //Assert
             Assert.Equal(expected, actual);
         }
+
+        public void Arabic_WhenCantConverValue_ShouldRiseAnException()
+        {
+            // Arrange
+            Arabic arabic = new Arabic();
+            //Act
+            Action actual = () => arabic.ConvertToRoman(0);
+            //Assert
+            Assert.Throws<ArgumentException>(actual);
+        }
     }
 }
