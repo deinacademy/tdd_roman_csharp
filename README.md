@@ -1,5 +1,8 @@
 # Kata: TDD Arabic to Roman Numbers with C# #
 
+[![SonarCloud](https://sonarcloud.io/api/project_badges/measure?project=dein%3Atddroman&metric=alert_status)](https://sonarcloud.io/dashboard?id=dein%3Atddroman)
+[![SonarCloud](https://sonarcloud.io/api/project_badges/measure?project=dein%3Atddroman&metric=alert_status)](https://sonarcloud.io/api/project_badges/measure?project=dein%3Atddroman&metric=coverage)
+
 ## Project ##
 
 Create a solution with a class and test project
