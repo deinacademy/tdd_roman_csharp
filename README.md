@@ -10,8 +10,8 @@ cd Number
 dotnet restore
 cd ..
 
-dotnet new xunit -n Number.Test
-cd Number.Test
+dotnet new xunit -n Number.Tests
+cd Number.Tests
 dotnet add reference ../Number/Number.csproj
 dotnet add package Moq
 dotnet add package coverlet.msbuild
@@ -20,7 +20,7 @@ cd ..
 
 dotnet new sln -n Number
 dotnet sln Number.sln add ./Number/Number.csproj
-dotnet sln Number.sln add ./Number.Test/Number.Test.csproj
+dotnet sln Number.sln add ./Number.Tests/Number.Tests.csproj
 ```
 
 ## Requirements ##

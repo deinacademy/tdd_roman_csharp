@@ -37,9 +37,9 @@
             },
             "args": [
                 "test",
-                "${workspaceFolder}/Project.Tests/Project.Tests.csproj",
+                "${workspaceFolder}/Number.Tests/Number.Tests.csproj",
                 "/p:CollectCoverage=true",
-                "/p:CoverletOutputFormat=\"opencover,lcov\"",
+                "/p:CoverletOutputFormat=\"lcov\"",
                 "/p:CoverletOutput=../lcov"
             ],
             "problemMatcher": "$msCompile"
