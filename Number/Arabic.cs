@@ -30,9 +30,13 @@ namespace Number
                     result += "I";
                 }
             }
-            else
+            else if (number == 9)
             {
                 result = "IX";
+            }
+            else
+            {
+                result = "X";
             }
             if (String.IsNullOrEmpty(result))
             {
