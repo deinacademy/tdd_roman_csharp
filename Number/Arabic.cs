@@ -6,19 +6,16 @@ namespace Number
     {
         public string ConvertToRoman(int number)
         {
-            if (number == 1)
+            string result = "";
+            for (int i = 0; i < number; i++)
             {
-                return "I";
+                result += "I";
             }
-            else if (number == 2)
+            if (String.IsNullOrEmpty(result))
             {
-                return "II";
+                throw new NotImplementedException();
             }
-            else
-            {
-                return "III";
-            }
-            throw new NotImplementedException();
+            return result;
         }
     }
 }
