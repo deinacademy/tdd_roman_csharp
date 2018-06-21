@@ -26,7 +26,7 @@ namespace Number.Test
         }
 
         [Fact]
-        public void Arabic_WhenCantConverValue_ShouldRiseAnException()
+        public void Arabic_WhenCantConvertValue_ShouldRiseAnException()
         {
             // Arrange
             Arabic arabic = new Arabic();
