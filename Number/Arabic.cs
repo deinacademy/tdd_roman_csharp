@@ -18,9 +18,17 @@ namespace Number
             {
                 result = "IV";
             }
-            else
+            else if (number == 5)
             {
                 result = "V";
+            }
+            else if (number == 6)
+            {
+                result = "VI";
+            }
+            else
+            {
+                result = "VII";
             }
             if (String.IsNullOrEmpty(result))
             {
