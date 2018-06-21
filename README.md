@@ -36,15 +36,21 @@ dotnet sln Number.sln add ./Number.Test/Number.Test.csproj
 ### Basic Symbols ###
 
 | 1 | 5 | 10 | 50 | 100 | 500 | 1000 |
+| - | - | -- | -- | --- | --- | ---- |
 | I | V | X  | L  | C   | D   | M    |
 
 ### Basic Combinations ###
 
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| - | -- | --- | -- | - | -- | --- | ---- | -- |
 | I | II | III | IV | V | VI | VII | VIII | IX |
+
 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 |
+| - | -- | --- | -- | - | -- | --- | ---- | -- |
 | X | XX | XXX | XL | L | LX | LXX | LXXX | XC |
+
 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 |
+| - | -- | --- | -- | - | -- | --- | ---- | -- |
 | C | CC | CCC | CD | D | DC | DCC | DCCC | CM |
 
 ### How Convert ###
