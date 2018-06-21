@@ -22,17 +22,13 @@ namespace Number
             {
                 result = "V";
             }
-            else if (number == 6)
+            else if (number >= 6 && number <= 8)
             {
-                result = "VI";
-            }
-            else if (number == 7)
-            {
-                result = "VII";
-            }
-            else if (number == 8)
-            {
-                result = "VIII";
+                result = "V";
+                for (int i = 5; i < number; i++)
+                {
+                    result += "I";
+                }
             }
             else
             {
