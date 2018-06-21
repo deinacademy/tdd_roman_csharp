@@ -10,9 +10,13 @@ namespace Number
             {
                 return "I";
             }
-            else
+            else if (number == 2)
             {
                 return "II";
+            }
+            else
+            {
+                return "III";
             }
             throw new NotImplementedException();
         }
