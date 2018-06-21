@@ -24,7 +24,7 @@ namespace Number
             }
             if (String.IsNullOrEmpty(result))
             {
-                throw new NotImplementedException();
+                throw new ArgumentException("Value can't be converted");
             }
             return result;
         }
