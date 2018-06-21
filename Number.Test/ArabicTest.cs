@@ -22,6 +22,7 @@ namespace Number.Test
             Assert.Equal(expected, actual);
         }
 
+        [Fact]
         public void Arabic_WhenCantConverValue_ShouldRiseAnException()
         {
             // Arrange
