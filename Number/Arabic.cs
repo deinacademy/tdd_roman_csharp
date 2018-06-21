@@ -7,9 +7,16 @@ namespace Number
         public string ConvertToRoman(int number)
         {
             string result = "";
-            for (int i = 0; i < number; i++)
+            if (number <= 3)
             {
-                result += "I";
+                for (int i = 0; i < number; i++)
+                {
+                    result += "I";
+                }
+            }
+            else
+            {
+                result = "IV";
             }
             if (String.IsNullOrEmpty(result))
             {
