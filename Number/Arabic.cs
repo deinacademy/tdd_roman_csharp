@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Number
 {
@@ -24,38 +25,40 @@ namespace Number
 
         private static string PlaceValues(int number, Symbol symbol)
         {
-            string result = "";
+            StringBuilder result = new StringBuilder();
+            result.Clear();
             if (number <= 3)
             {
-                result = RepeatLiteral(number, symbol.one);
+                result.Append(RepeatLiteral(number, symbol.one));
             }
             else if (number == 4)
             {
-                result = symbol.one + symbol.five;
+                result.Append(symbol.one + symbol.five);
             }
             else if (number == 5)
             {
-                result = symbol.five;
+                result.Append(symbol.five);
             }
             else if (number >= 6 && number <= 8)
             {
-                result = symbol.five + RepeatLiteral(number - 5, symbol.one);
+                result.Append(symbol.five + RepeatLiteral(number - 5, symbol.one));
             }
             else if (number == 9)
             {
-                result = symbol.one + symbol.ten;
+                result.Append(symbol.one + symbol.ten);
             }
-            return result;
+            return result.ToString();
         }
 
         private static string RepeatLiteral(int times, string symbol)
         {
-            string result = "";
+            StringBuilder result = new StringBuilder();
+            result.Clear();
             for (int i = 0; i < times; i++)
             {
-                result += symbol;
+                result.Append(symbol);
             }
-            return result;
+            return result.ToString();
         }
     }
 }
