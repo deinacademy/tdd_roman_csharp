@@ -39,16 +39,16 @@ dotnet sln Number.sln add ./Number.Test/Number.Test.csproj
 
 ## Place Value ##
 
-| Expression        | Place            | Europe    |
-| ----------------: | :--------------- | :-------- |
-|                 1 | ones             |           |
-|                10 | tens             |           |
-|               100 | tens             |           |
-|             1,000 | thousands        |           |
-|            10,000 | ten thousands    |           |
-|         1,000,000 | ten thousands    |           |
-|         1,000,000 | millions         |           |
-|        10,000,000 | ten millions     |           |
-|       100,000,000 | hundred millions |           |
-|     1,000,000,000 | billions         | milliards |
-| 1,000,000,000,000 | trillions        | billions  |
+| Expression        | Place              | Europe    |
+| ----------------: | :----------------- | :-------- |
+|                 1 | ones               |           |
+|                10 | tens               |           |
+|               100 | hundreds           |           |
+|             1,000 | thousands          |           |
+|            10,000 | ten thousands      |           |
+|         1,000,000 | hundreds thousands |           |
+|         1,000,000 | millions           |           |
+|        10,000,000 | ten millions       |           |
+|       100,000,000 | hundred millions   |           |
+|     1,000,000,000 | billions           | milliards |
+| 1,000,000,000,000 | trillions          | billions  |
