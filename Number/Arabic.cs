@@ -14,9 +14,13 @@ namespace Number
                     result += "I";
                 }
             }
-            else
+            else if (number == 4)
             {
                 result = "IV";
+            }
+            else
+            {
+                result = "V";
             }
             if (String.IsNullOrEmpty(result))
             {
