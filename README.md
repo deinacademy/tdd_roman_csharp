@@ -36,3 +36,19 @@ dotnet sln Number.sln add ./Number.Test/Number.Test.csproj
 | Symbol | I | V | X  | C  | D   | M    |
 | ------ |:-:|:-:|:--:|:--:|:---:|:----:|
 | Value  | 1 | 5 | 10 | 50 | 500 | 1000 |
+
+## Place Value ##
+
+| Expression        | Place            | Europe    |
+| ----------------: | :--------------- | :-------- |
+|                 1 | ones             |           |
+|                10 | tens             |           |
+|               100 | tens             |           |
+|             1,000 | thousands        |           |
+|            10,000 | ten thousands    |           |
+|         1,000,000 | ten thousands    |           |
+|         1,000,000 | millions         |           |
+|        10,000,000 | ten millions     |           |
+|       100,000,000 | hundred millions |           |
+|     1,000,000,000 | billions         | milliards |
+| 1,000,000,000,000 | trillions        | billions  |
