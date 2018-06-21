@@ -33,9 +33,9 @@ dotnet sln Number.sln add ./Number.Test/Number.Test.csproj
 
 ## Roman Numbers ##
 
-| Symbol | I | V | X  | C  | D   | M    |
-| ------ |:-:|:-:|:--:|:--:|:---:|:----:|
-| Value  | 1 | 5 | 10 | 50 | 500 | 1000 |
+| Symbol | I | V | X  | L  | C  | D   | M    |
+| ------ |:-:|:-:|:--:|:--:|:---:|:--:|:----:|
+| Value  | 1 | 5 | 10 | 50 | 100 |500 | 1000 |
 
 ## Place Value ##
 
