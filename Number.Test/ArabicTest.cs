@@ -6,14 +6,15 @@ namespace Number.Test
 {
     public class ArabicTest
     {
-        [Fact]
-        public void Arabic_WhenConvertValue1_ShouldReturnValueI()
+        [Theory]
+        [InlineData("I", 1)]
+        [InlineData("II", 2)]
+        public void Arabic_WhenConvertIntegerValue_ShouldReturnRomanString(string expected, int value)
         {
             // Arrange
             Arabic arabic = new Arabic();
-            string expected = "I";
             //Act
-            string actual = arabic.ConvertToRoman(1);
+            string actual = arabic.ConvertToRoman(value);
             //Assert
             Assert.Equal(expected, actual);
         }
