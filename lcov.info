@@ -1,0 +1,105 @@
+SF:/Users/jcmartinez/Developer/U/C#/TDD/Number/Arabic.cs
+FN:7,System.String Number.Arabic::ConvertToRoman(System.Int32,Number.Roman)
+FNDA:17,System.String Number.Arabic::ConvertToRoman(System.Int32,Number.Roman)
+DA:8,17
+DA:9,17
+DA:10,17
+DA:11,17
+DA:12,17
+DA:14,17
+DA:15,17
+DA:16,17
+DA:18,17
+DA:19,1
+DA:20,1
+DA:22,16
+DA:23,16
+BRDA:18,112,0,1
+BRDA:18,112,1,65535
+FN:25,System.String Number.Arabic::PlaceValues(System.Int32,Number.Symbol)
+FNDA:51,System.String Number.Arabic::PlaceValues(System.Int32,Number.Symbol)
+DA:26,51
+DA:27,51
+DA:28,51
+DA:29,39
+DA:30,39
+DA:31,39
+DA:32,12
+DA:33,1
+DA:34,1
+DA:35,1
+DA:36,11
+DA:37,3
+DA:38,3
+DA:39,3
+DA:40,8
+DA:41,5
+DA:42,5
+DA:43,5
+DA:44,3
+DA:45,3
+DA:46,3
+DA:47,3
+DA:48,51
+DA:49,51
+BRDA:28,16,0,2147483647
+BRDA:28,16,1,4095
+BRDA:32,45,0,1
+BRDA:32,45,1,2047
+BRDA:36,77,0,7
+BRDA:36,77,1,255
+BRDA:40,93,0,255
+BRDA:40,93,1,0
+BRDA:40,109,0,31
+BRDA:40,109,1,7
+BRDA:44,152,0,7
+BRDA:44,152,1,2147483647
+FN:51,System.String Number.Arabic::RepeatLiteral(System.Int32,System.String)
+FNDA:44,System.String Number.Arabic::RepeatLiteral(System.Int32,System.String)
+DA:52,44
+DA:53,44
+DA:54,136
+DA:55,24
+DA:56,24
+DA:57,24
+DA:58,44
+DA:59,44
+BRDA:54,31,1,16777215
+BRDA:54,31,0,2147483647
+LF:45
+LH:45
+BRF:16
+BRH:15
+FNF:3
+FNH:3
+end_of_record
+SF:/Users/jcmartinez/Developer/U/C#/TDD/Number/Roman.cs
+FN:7,System.String Number.Symbol::get_one()
+FNDA:99,System.String Number.Symbol::get_one()
+DA:8,99
+FN:8,System.String Number.Symbol::get_five()
+FNDA:60,System.String Number.Symbol::get_five()
+DA:9,60
+FN:9,System.String Number.Symbol::get_ten()
+FNDA:54,System.String Number.Symbol::get_ten()
+DA:10,54
+FN:21,System.Collections.Generic.Dictionary`2<System.String,Number.Symbol> Number.Roman::get__symbols()
+FNDA:119,System.Collections.Generic.Dictionary`2<System.String,Number.Symbol> Number.Roman::get__symbols()
+DA:22,119
+FN:29,System.Void Number.Roman::AddPlaceValue(System.String,Number.Symbol)
+FNDA:51,System.Void Number.Roman::AddPlaceValue(System.String,Number.Symbol)
+DA:30,51
+DA:31,51
+DA:32,51
+FN:34,Number.Symbol Number.Roman::GetSymbol(System.String)
+FNDA:51,Number.Symbol Number.Roman::GetSymbol(System.String)
+DA:35,51
+DA:36,51
+DA:37,51
+LF:10
+LH:10
+BRF:0
+BRH:0
+FNF:6
+FNH:6
+end_of_record

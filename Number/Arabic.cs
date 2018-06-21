@@ -4,16 +4,16 @@ namespace Number
 {
     public class Arabic
     {
-        public string ConvertToRoman(int number)
+        public string ConvertToRoman(int number, Roman roman)
         {
             string result = "";
             int hundreds = number / 100 % 10;
             int tens = number / 10 % 10;
             int ones = number / 1 % 10;
 
-            result += PlaceValues(hundreds, new string[] { "C", "D", "M" });
-            result += PlaceValues(tens, new string[] { "X", "L", "C" });
-            result += PlaceValues(ones, new string[] { "I", "V", "X" });
+            result += PlaceValues(hundreds, roman.GetSymbol("hundreds"));
+            result += PlaceValues(tens, roman.GetSymbol("tens"));
+            result += PlaceValues(ones, roman.GetSymbol("ones"));
 
             if (String.IsNullOrEmpty(result))
             {
@@ -22,28 +22,28 @@ namespace Number
             return result;
         }
 
-        private static string PlaceValues(int number, string[] symbols)
+        private static string PlaceValues(int number, Symbol symbol)
         {
             string result = "";
             if (number <= 3)
             {
-                result = RepeatLiteral(number, symbols[0]);
+                result = RepeatLiteral(number, symbol.one);
             }
             else if (number == 4)
             {
-                result = symbols[0] + symbols[1];
+                result = symbol.one + symbol.five;
             }
             else if (number == 5)
             {
-                result = symbols[1];
+                result = symbol.five;
             }
             else if (number >= 6 && number <= 8)
             {
-                result = symbols[1] + RepeatLiteral(number - 5, symbols[0]);
+                result = symbol.five + RepeatLiteral(number - 5, symbol.one);
             }
             else if (number == 9)
             {
-                result = symbols[0] + symbols[2];
+                result = symbol.one + symbol.ten;
             }
             return result;
         }
