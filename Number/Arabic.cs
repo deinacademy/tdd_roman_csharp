@@ -26,9 +26,13 @@ namespace Number
             {
                 result = "VI";
             }
-            else
+            else if (number == 7)
             {
                 result = "VII";
+            }
+            else
+            {
+                result = "VIII";
             }
             if (String.IsNullOrEmpty(result))
             {
