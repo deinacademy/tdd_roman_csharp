@@ -17,6 +17,7 @@ namespace Number.Test
         [InlineData("VIII", 8)]
         [InlineData("IX", 9)]
         [InlineData("X", 10)]
+        [InlineData("XI", 11)]
         public void Arabic_WhenConvertIntegerValue_ShouldReturnRomanString(string expected, int value)
         {
             // Arrange
