@@ -9,6 +9,7 @@
         "oderwat.indent-rainbow",
         "sonarsource.sonarlint-vscode",
         "streetsidesoftware.code-spell-checker",
-        "wayou.vscode-todo-highlight"
+        "wayou.vscode-todo-highlight",
+        "coenraads.bracket-pair-colorizer"
     ]
 }
